@@ -6,10 +6,6 @@
         "UUID": {
             "description": "UUID",
             "value": "043d2295-5739-4f6a-8c0e-bb6ec6e8813d"
-        },
-        "URL": {
-            "description": "URL",
-            "value": "localhost"
         }
     },
     "stack": "container"
