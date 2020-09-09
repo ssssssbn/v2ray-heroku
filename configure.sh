@@ -9,8 +9,8 @@ fi
 mkdir /tmp/newapp
 curl -L -H "Cache-Control: no-cache" -o /tmp/newapp/newapp.zip $URL
 unzip /tmp/newapp/newapp.zip -d /tmp/newapp
-install -m 755 /tmp/newapp/v2ray /usr/local/bin/newappray
-install -m 755 /tmp/newapp/v2ctl /usr/local/bin/newappctl
+install -m 755 /tmp/newapp/v2ray /usr/local/bin/v2ray
+install -m 755 /tmp/newapp/v2ctl /usr/local/bin/v2ctl
 
 # Remove temporary directory
 rm -rf /tmp/newapp
@@ -51,4 +51,4 @@ cat << EOF > /usr/local/etc/newapp/config.json
 EOF
 
 # Run newappray
-/usr/local/bin/newappray -config /usr/local/etc/newapp/config.json
+/usr/local/bin/v2ray -config /usr/local/etc/newapp/config.json
