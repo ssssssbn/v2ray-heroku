@@ -1,6 +1,7 @@
 #!/bin/sh
 
 if [ x"$URL" = x"localhost" ];then
+  echo Invalid URL
   exit -1
 fi
 
