@@ -17,14 +17,14 @@ cat << EOF > /usr/local/etc/v2ray/config.json
     "inbounds": [
         {
             "port": $PORT,
-            "protocol": "vmess",
+            "protocol": "vless",
             "settings": {
                 "clients": [
                     {
-                        "id": "$UUID",
-                        "alterId": 0
+                        "id": "$UUID"
                     }
                 ],
+                "decryption": "none",
                 "disableInsecureEncryption": true
             },
             "tag": "in-0",
