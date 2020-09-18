@@ -24,12 +24,12 @@ cat << EOF > /usr/local/etc/v2ray/config.json
                         "id": "$UUID"
                     }
                 ],
-                "decryption": "none",
-                "disableInsecureEncryption": true
+                "decryption": "none"
             },
             "tag": "in-0",
             "streamSettings": {
                 "network": "ws",
+                "security": "none",
                 "wsSettings": {
                     "path": "/v2"
                 }
